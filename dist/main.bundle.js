@@ -1,6 +1,6 @@
-webpackJsonp([1,4],{
+webpackJsonp([2,4],{
 
-/***/ 288:
+/***/ 290:
 /***/ (function(module, exports) {
 
 function webpackEmptyContext(req) {
@@ -9,20 +9,20 @@ function webpackEmptyContext(req) {
 webpackEmptyContext.keys = function() { return []; };
 webpackEmptyContext.resolve = webpackEmptyContext;
 module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 288;
+webpackEmptyContext.id = 290;
 
 
 /***/ }),
 
-/***/ 289:
+/***/ 291:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(377);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(379);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__environments_environment__ = __webpack_require__(402);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_app_module__ = __webpack_require__(398);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__environments_environment__ = __webpack_require__(401);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_app_module__ = __webpack_require__(400);
 
 
 
@@ -31,11 +31,11 @@ if (__WEBPACK_IMPORTED_MODULE_2__environments_environment__["a" /* environment *
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["a" /* enableProdMode */])();
 }
 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_3__app_app_module__["a" /* AppModule */]);
-//# sourceMappingURL=C:/workspace/angular2/src/main.js.map
+//# sourceMappingURL=C:/workspace/anguar2reddit/src/main.js.map
 
 /***/ }),
 
-/***/ 397:
+/***/ 399:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -55,32 +55,33 @@ var AppComponent = (function () {
     function AppComponent() {
         this.title = 'app works!';
     }
+    AppComponent.prototype.addArticle = function (title, link) {
+        console.log("Adding Article title " + title.value + " and link " + link.value);
+        return false;
+    };
     AppComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["U" /* Component */])({
             selector: 'app-root',
-            template: __webpack_require__(462),
+            template: __webpack_require__(459),
             styles: [__webpack_require__(458)]
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
     return AppComponent;
 }());
-//# sourceMappingURL=C:/workspace/angular2/src/app.component.js.map
+//# sourceMappingURL=C:/workspace/anguar2reddit/src/app.component.js.map
 
 /***/ }),
 
-/***/ 398:
+/***/ 400:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(165);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(367);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(373);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(397);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__hello_world_hello_world_component__ = __webpack_require__(399);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__user_item_user_item_component__ = __webpack_require__(400);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__user_list_user_list_component__ = __webpack_require__(401);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(369);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(375);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(399);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -96,19 +97,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-
-
-
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */],
-                __WEBPACK_IMPORTED_MODULE_5__hello_world_hello_world_component__["a" /* HelloWorldComponent */],
-                __WEBPACK_IMPORTED_MODULE_6__user_item_user_item_component__["a" /* UserItemComponent */],
-                __WEBPACK_IMPORTED_MODULE_7__user_list_user_list_component__["a" /* UserListComponent */]
+                __WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -122,122 +117,11 @@ var AppModule = (function () {
     ], AppModule);
     return AppModule;
 }());
-//# sourceMappingURL=C:/workspace/angular2/src/app.module.js.map
-
-/***/ }),
-
-/***/ 399:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HelloWorldComponent; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var HelloWorldComponent = (function () {
-    function HelloWorldComponent() {
-    }
-    HelloWorldComponent.prototype.ngOnInit = function () {
-    };
-    HelloWorldComponent = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["U" /* Component */])({
-            selector: 'app-hello-world',
-            template: __webpack_require__(463),
-            styles: [__webpack_require__(459)]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], HelloWorldComponent);
-    return HelloWorldComponent;
-}());
-//# sourceMappingURL=C:/workspace/angular2/src/hello-world.component.js.map
-
-/***/ }),
-
-/***/ 400:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UserItemComponent; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var UserItemComponent = (function () {
-    function UserItemComponent() {
-        this.name = 'shikun';
-    }
-    UserItemComponent.prototype.ngOnInit = function () {
-    };
-    __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* Input */])(), 
-        __metadata('design:type', Object)
-    ], UserItemComponent.prototype, "name", void 0);
-    UserItemComponent = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["U" /* Component */])({
-            selector: 'app-user-item',
-            template: __webpack_require__(464),
-            styles: [__webpack_require__(460)]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], UserItemComponent);
-    return UserItemComponent;
-}());
-//# sourceMappingURL=C:/workspace/angular2/src/user-item.component.js.map
+//# sourceMappingURL=C:/workspace/anguar2reddit/src/app.module.js.map
 
 /***/ }),
 
 /***/ 401:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UserListComponent; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var UserListComponent = (function () {
-    function UserListComponent() {
-        this.names = ["shikun", "layla"];
-    }
-    UserListComponent.prototype.ngOnInit = function () {
-    };
-    UserListComponent = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["U" /* Component */])({
-            selector: 'app-user-list',
-            template: __webpack_require__(465),
-            styles: [__webpack_require__(461)]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], UserListComponent);
-    return UserListComponent;
-}());
-//# sourceMappingURL=C:/workspace/angular2/src/user-list.component.js.map
-
-/***/ }),
-
-/***/ 402:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -249,7 +133,7 @@ var UserListComponent = (function () {
 var environment = {
     production: false
 };
-//# sourceMappingURL=C:/workspace/angular2/src/environment.js.map
+//# sourceMappingURL=C:/workspace/anguar2reddit/src/environment.js.map
 
 /***/ }),
 
@@ -263,59 +147,17 @@ module.exports = ""
 /***/ 459:
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "<form class=\"ui large form segment\">\n    <h3 class=\"ui header\">Add a link</h3>\n    <div class=\"field\">\n        <label for=\"title\">Title:</label>\n        <input name=\"title\" #newTitle>\n    </div>\n    <div class=\"field\">\n        <label for=\"link\">Link:</label>\n        <input name=\"link\" #newLink>\n\n    </div>\n</form>\n<button (click)=\"addArticle(newTitle,newLink)\" class=\"ui positive right floated button\">Submit link</button>"
 
 /***/ }),
 
-/***/ 460:
-/***/ (function(module, exports) {
-
-module.exports = ""
-
-/***/ }),
-
-/***/ 461:
-/***/ (function(module, exports) {
-
-module.exports = ""
-
-/***/ }),
-
-/***/ 462:
-/***/ (function(module, exports) {
-
-module.exports = "<h1>\n    {{title}}\n    <app-hello-world></app-hello-world>\n    <app-user-item></app-user-item>\n    <app-user-list></app-user-list>\n</h1>"
-
-/***/ }),
-
-/***/ 463:
-/***/ (function(module, exports) {
-
-module.exports = "<p>\n  hello-world works!\n</p>\n"
-
-/***/ }),
-
-/***/ 464:
-/***/ (function(module, exports) {
-
-module.exports = "<p>\n    Hello {{name}}\n</p>"
-
-/***/ }),
-
-/***/ 465:
-/***/ (function(module, exports) {
-
-module.exports = "<ul>\n    <app-user-item *ngFor=\"let name of names\" [name]=\"name\">\n\n    </app-user-item>\n</ul>"
-
-/***/ }),
-
-/***/ 478:
+/***/ 476:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(289);
+module.exports = __webpack_require__(291);
 
 
 /***/ })
 
-},[478]);
+},[476]);
 //# sourceMappingURL=main.bundle.map
